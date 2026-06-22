@@ -219,6 +219,41 @@ a{color:inherit;text-decoration:none;}
   .hero-title{font-size:32px;}
   .toc-title{font-size:26px;letter-spacing:6px;}
 }
+
+/* wy-cross-nav-css v1 */
+/* ── 跨卷導覽（側欄底部）── */
+.sb-cross{display:flex;flex-direction:column;align-items:center;gap:8px;
+  width:100%;margin:18px 0 4px;padding:18px 4px 6px;position:relative;}
+.sb-cross::before{content:"";position:absolute;top:0;left:14%;right:14%;
+  height:1px;background:linear-gradient(90deg,
+    transparent 0%,rgba(184,134,11,.15) 18%,
+    var(--gold,#b8860b) 50%,
+    rgba(184,134,11,.15) 82%,transparent 100%);
+  box-shadow:0 1px 0 rgba(212,168,75,.18);}
+.sb-cross::after{content:"";position:absolute;top:6px;left:38%;right:38%;
+  height:1px;background:linear-gradient(90deg,
+    transparent,rgba(184,134,11,.55),transparent);}
+.sb-x{display:flex;flex-direction:column;align-items:center;gap:3px;
+  text-decoration:none;color:var(--sbText,#d4c4a8);padding:4px 4px;width:100%;
+  border-radius:7px;transition:all .25s;}
+.sb-x:hover{background:rgba(184,134,11,.14);transform:translateY(-1px);}
+.sb-x-glyph{width:30px;height:30px;border-radius:50%;
+  display:flex;align-items:center;justify-content:center;
+  border:1.2px solid rgba(212,196,168,.55);
+  color:var(--goldL,#d4a84b);font-family:"Noto Sans TC",sans-serif;font-size:14px;
+  background:rgba(184,134,11,.08);transition:all .25s;}
+.sb-x:hover .sb-x-glyph{border-color:var(--gold,#b8860b);color:#fff;
+  background:linear-gradient(135deg,var(--gold,#b8860b),var(--goldL,#d4a84b));
+  box-shadow:0 0 10px rgba(184,134,11,.5);}
+.sb-x-label{font-family:"Noto Sans TC",sans-serif;font-size:10.5px;
+  letter-spacing:1.2px;color:var(--sbText,#d4c4a8);opacity:.78;text-align:center;
+  line-height:1.25;}
+.sb-x:hover .sb-x-label{color:var(--goldL,#d4a84b);opacity:1;}
+.sb-x-hub .sb-x-glyph{background:linear-gradient(135deg,
+  rgba(184,134,11,.22),rgba(212,168,75,.18));
+  border-color:rgba(212,168,75,.55);color:var(--goldL,#d4a84b);font-size:13px;
+  font-weight:700;letter-spacing:1px;}
+
 </style>
 <meta name="wy-full-protection" content="v2-silent">
 <meta name="robots" content="index, follow">
@@ -323,14 +358,22 @@ a{color:inherit;text-decoration:none;}
 <span class="sb-brand-arrow" data-wytext="lf+8RDU1OA=="></span>
 </a>
 <nav class="sb-nav" id="sbNav"><a class="sb-item" data-yt="https://youtu.be/GnOySWwyyQk" href="#chapter-1" title="不直說花香供養，而以善根、般若為供養之本。"><span class="sb-circle">1</span><span class="sb-label" data-wytext="ku+pgsHDjNf/nMj/"></span></a><a class="sb-item" data-yt="https://youtu.be/wC4UhldvR6A" href="#chapter-2" title="菩薩發願滿眾生願，須辨可得與不可得、真身與化身。"><span class="sb-circle">2</span><span class="sb-label" data-wytext="kdWfgtrFj/Xakvjq"></span></a><a class="sb-item" data-yt="https://youtu.be/NC2YEadktys" href="#chapter-3" title="為眾生次第建立布施至般若的六度，般若慧眼為諸寶之最。"><span class="sb-circle">3</span><span class="sb-label" data-wytext="kNKmgeTXjdPC"></span></a><a class="sb-item" data-yt="https://youtu.be/R5yrZypyWXw" href="#chapter-4" title="場域、相續、轉化三論，解釋般若如何令有限福德無盡。"><span class="sb-circle">4</span><span class="sb-label" data-wytext="kde7g8f1jNHpkvfU"></span></a><a class="sb-item" data-yt="https://youtu.be/OOdg7fBLU3I" href="#chapter-5" title="唯佛能讚其名之悖論，以二諦、體用不二、智悲雙運破解。"><span class="sb-circle">5</span><span class="sb-label" data-wytext="n9KVgNzhj8HVncLv"></span></a><a class="sb-item" data-yt="https://youtu.be/7VfG2ODRRl8" href="#chapter-6" title="一念遍至十方之疑，以無生法忍破殼、中觀時空自在解之。"><span class="sb-circle">6</span><span class="sb-label" data-wytext="k8Gtgd7PgejpnevG"></span></a><a class="sb-item" data-yt="https://youtu.be/Z-V-d-_bcPY" href="#chapter-7" title="一音遍十方之悖論，以音聲三層級、聽聞緣起、中觀統攝。"><span class="sb-circle">7</span><span class="sb-label" data-wytext="k8Gtjf7JgejpkOH0iLuK"></span></a><a class="sb-item" data-yt="https://youtu.be/UwW1lMSYKbU" href="#chapter-8" title="諸佛世界何以不斷，破市場飽和與投入產出二悖論，歸中觀。"><span class="sb-circle">8</span><span class="sb-label" data-wytext="k8G7g/T2jNHpk/rC"></span></a></nav>
-<div class="sb-foot">
-<a class="sb-extra" href="https://weiwen0925.github.io/dazhidulun-29/" rel="noopener" target="_blank" title="第二十九卷">
-<span class="se-ico">←</span><span class="se-lbl" data-wytext="kNWBgNv2jeTlkdXoi6CE"></span></a>
-<a class="sb-extra" href="https://weiwen0925.github.io/dazhidulun-31/" rel="noopener" target="_blank" title="第三十一卷">
-<span class="se-ico">→</span><span class="se-lbl" data-wytext="kNWBgNnzjeTlkdT1i6CE"></span></a>
-<a class="sb-extra" href="https://weiwen0925.github.io/dazhidulun-0/" rel="noopener" target="_blank" title="大智度論門頁">
-<span class="se-ico">⌂</span><span class="se-lbl" data-wytext="kt2KgvjAjdPCncfjh7uz2Y33"></span></a>
-</div>
+
+  <!-- wy-cross-nav v1 -->
+  <div class="sb-cross">
+    <a class="sb-x" href="https://weiwen0925.github.io/dazhidulun-29/" title="第二十九卷">
+      <span class="sb-x-glyph">←</span>
+      <span class="sb-x-label">卷二十九</span>
+    </a>
+    <a class="sb-x sb-x-hub" href="https://weiwen0925.github.io/dazhidulun-0/" title="大智度論門頁">
+      <span class="sb-x-glyph">智</span>
+      <span class="sb-x-label">門頁</span>
+    </a>
+    <a class="sb-x" href="https://weiwen0925.github.io/dazhidulun-31/" title="第三十一卷">
+      <span class="sb-x-glyph">→</span>
+      <span class="sb-x-label">卷三十一</span>
+    </a>
+  </div>
 </aside>
 <main class="main">
 <div class="site-hero">
