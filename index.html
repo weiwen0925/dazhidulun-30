@@ -764,5 +764,58 @@ document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classL
 upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
 })();</script>
 <!--WY-C30P3:END-->
+<!--WY-C30P4:BEGIN-->
+<style id="wy-c30p4-css">
+.c30p4-fabbox{position:fixed;right:22px;bottom:78px;z-index:121;display:none;}
+.c30p4-fabbox.show{display:block;}
+.c30p4-btn{display:inline-flex;align-items:center;gap:9px;font-family:"Noto Sans TC",sans-serif;letter-spacing:.5px;color:#f7ecd2;background:linear-gradient(135deg,#573f38,#2e2420);padding:8px 15px;border-radius:22px;border:1px solid rgba(184,134,11,.6);box-shadow:0 4px 16px rgba(0,0,0,.3);cursor:pointer;opacity:.96;transition:opacity .3s,transform .2s,box-shadow .2s;}
+.c30p4-btn:hover{opacity:1;transform:translateY(-2px);box-shadow:0 6px 22px rgba(184,134,11,.5);}
+.c30p4-ic{font-size:15px;line-height:1;color:#ecc978;}
+.c30p4-ls{display:flex;flex-direction:column;align-items:flex-start;line-height:1.22;}
+.c30p4-l1{font-size:10.5px;font-weight:500;opacity:.82;white-space:nowrap;}
+.c30p4-l2{font-size:13px;font-weight:700;color:#faf1d8;white-space:nowrap;}
+.c30p4-modal{position:fixed;inset:0;z-index:200;display:none;align-items:center;justify-content:center;background:rgba(28,20,12,.58);padding:16px;}
+.c30p4-modal.open{display:flex;}
+.c30p4-card{position:relative;background:#fbf7ee;max-width:900px;width:100%;max-height:88vh;overflow:auto;border:1px solid #d8c8ac;border-radius:14px;padding:30px 24px 22px;box-shadow:0 18px 50px rgba(0,0,0,.4);}
+.c30p4-card h3{margin:0 0 2px;font-family:"Noto Serif TC",serif;font-size:20px;color:#8b5e3c;}
+.c30p4-card .sub{margin:0 0 14px;font-family:"Noto Sans TC",sans-serif;font-size:13px;color:#6b5b4b;}
+.c30p4-close{position:absolute;top:12px;right:16px;width:34px;height:34px;border:none;border-radius:50%;background:#efe6d4;color:#8b5e3c;font-size:22px;line-height:1;cursor:pointer;z-index:2;}
+.c30p4-close:hover{background:#e3d5b8;}
+.c30p4-tbl{width:100%;border-collapse:collapse;font-family:"Noto Sans TC",sans-serif;font-size:13px;margin:.3em 0 1.2em;}
+.c30p4-tbl caption{font-family:"Noto Serif TC",serif;font-weight:700;color:#8b5e3c;font-size:14.5px;text-align:left;margin:.6em 0 .35em;line-height:1.5;}
+.c30p4-tbl th,.c30p4-tbl td{border:1px solid #d8c8ac;padding:.45em .6em;text-align:left;vertical-align:top;line-height:1.6;}
+.c30p4-tbl thead th{background:#8b5e3c;color:#f7ecd2;font-weight:700;}
+.c30p4-tbl td:first-child{white-space:nowrap;color:#8b5e3c;font-weight:700;background:#f0e8d8;}
+.c30p4-tbl tbody tr:nth-child(even) td{background:#f6efe0;}
+.c30p4-tbl b{color:#8b2500;}
+.c30p4-note{font-size:12px;color:#5a4e3a;line-height:1.9;background:#f6efe0;border-left:3px solid #c4956a;border-radius:0 6px 6px 0;padding:10px 13px;margin:4px 0 0;}
+.c30p4-note b{color:#8b2500;}
+@media(max-width:900px){.c30p4-fabbox{right:14px;}.c30p4-tbl{font-size:11.5px;}.c30p4-card{padding:26px 14px 16px;}}
+</style>
+<div class="c30p4-fabbox" id="c30p4Box"><button class="c30p4-btn" id="c30p4Btn" type="button" aria-label="開啟全景總表"><span class="c30p4-ic">▦</span><span class="c30p4-ls"><span class="c30p4-l1">本品 · 殖福不盡品</span><span class="c30p4-l2">有限因無限果 · 場域相續轉化三論</span></span></button></div><div class="c30p4-modal" id="c30p4Modal" role="dialog" aria-modal="true" aria-label="全景總表"><div class="c30p4-card"><button class="c30p4-close" id="c30p4Close" type="button" aria-label="關閉">×</button><h3>卷三十·第四品 殖福不盡品 · 全景總表</h3><p class="sub">卷三十・第四品｜有限因無限果・佛田場域論・燈焰相續論・般若轉化論・十字總持</p><table class="c30p4-tbl"><caption>一、核心悖論與三大解構模塊（本品主骨架）</caption><thead><tr><th>環節</th><th>內容</th></tr></thead><tbody><tr><td>開卷經文與核心命題</td><td>「欲殖一善根於佛福田中，至得阿耨多羅三藐三菩提不盡者，當學般若波羅蜜」——供養之物有限（花香燈明）、發心只是一念之善，何以果報延伸至成佛而「不盡」？</td></tr><tr><td>三大解構模塊</td><td>場域論（為何佛是功能最優種福對象，關鍵在能動性與雙重無限）、相續論（有為法念念生滅如何克服無常達成不盡，關鍵在功能性相續）、轉化論（般若如何將福德煉金為類涅槃屬性，關鍵在入諸法實相）</td></tr><tr><td>終極悖論</td><td>有為·無常 vs 無盡·常住——若果報如種子般生滅無常便不該說不盡，若強說常住不盡又與諸行無常法印相違；全品精彩在不違無常法印前提下仍成立「不盡」</td></tr><tr><td>釋名四詞</td><td>「善根」者三善根因緣供養之具（因中說果，如針導綖縫衣縫非針）；「一」者一一供養及法供養殖於諸佛田；「佛田」者十方三世諸佛；「殖」者專心堅著</td></tr><tr><td>農田生態五元件</td><td>除草（拔煩惱穢草）、平地（淨戒為平地）、沃土（大慈悲為良美）、溝渠（三十七道品為溝港）、垣牆（十力四無所畏為牆）——殖種於此無上之田，其福無盡</td></tr></tbody></table><table class="c30p4-tbl"><caption>二、三番問答與場域相續二論（因地雙重無限·功能性相續）</caption><thead><tr><th>環節</th><th>內容</th></tr></thead><tbody><tr><td>第一番·何以獨言佛田</td><td>佛為第一福田，以十力四無所畏十八不共法等無量佛法具足；法寶雖尊為佛師卻是工具性（藥無醫不靈），佛寶是能動性的致動者，故種福首選佛而非種種福田</td></tr><tr><td>雙重無限乘數效應</td><td>因地上佛緣一切眾生（廣度無限）、果地上佛具足萬德（深度無限）——有限供養投入此雙重無限場域，果報必然趨於無盡，如乘數交疊</td></tr><tr><td>第二番·無常法中如何不盡</td><td>不言「常不盡」，只言「乃至得佛中間不盡」——一切有為法雖念念生滅，相續不斷果報不失故名不盡；如燈雖焰焰生滅不名滅，脂盡炷滅乃可稱滅，福亦如是深心種於良田</td></tr><tr><td>燈焰隱喻·微觀宏觀</td><td>微觀·焰焰生滅（每剎那火焰新生新滅，對應諸行無常）；宏觀·光亮不斷（整體光明持續照耀功能不間斷）——只要深心（燃料）未盡，福德即便剎那生滅其功能依然相續不斷</td></tr><tr><td>第三番·喻如涅槃非即涅槃</td><td>福德以智慧力故令功德如涅槃畢竟空不生不滅，「喻如」涅槃非「即」涅槃；若即是涅槃便墮無為無法感果成佛——三解脫門（空、無相、無作）是三道濾鏡，濾去執著生滅相留下不生不滅本質</td></tr></tbody></table><table class="c30p4-tbl"><caption>三、轉化論與專家心法（般若煉金·十字總持）</caption><thead><tr><th>環節</th><th>內容</th></tr></thead><tbody><tr><td>本體論轉化總公式</td><td>福德（有限）＋般若（攝持）＝無盡；有限物質一旦進入無限虛空便獲得虛空的屬性——菩薩知諸法實相如涅槃不盡，福德入諸法實相故而亦不盡</td></tr><tr><td>二諦並行不悖</td><td>世俗諦上緣起→燈焰相續→感果成佛，因果歷然；勝義諦上體性本空→入實相→畢竟不盡，當體寂滅；兩軌由般若貫穿並行不悖，不一不異</td></tr><tr><td>三條專家心法</td><td>心法一·專注堅著（如樹根入地，深心對接佛的功德海）；心法二·全息相應（緣念法界，我此一善為盡法界眾生而作，因大故果無盡）；心法三·以空攝有（三輪體空，做完即空，功德因無主而回歸法性）</td></tr><tr><td>記憶圖譜五喻</td><td>良醫（功能性·佛為致動者）、燈焰（相續性·焰焰生滅光明不斷）、入實相（轉化性·福德入實相而不盡）、喻涅槃（中道性·非即非離）——皆以般若為中樞展開</td></tr><tr><td>十字總持四句</td><td>以「有為」之因，借「般若」之力，入「無為」之海，證「無上」之果——智慧正是讓福德「不盡」的防腐劑，福德若無般若攝持終隨無常朽壞</td></tr></tbody></table><p class="c30p4-note">本品直面一個尖銳悖論：有限之因如何致無限之果？龍樹以「場域論」（佛田雙重無限）、「相續論」（燈焰功能性延續而非實體常住）、「轉化論」（般若令福德喻如涅槃而非即涅槃）三道工序層層解構，最終落實為「專注堅著、全息相應、以空攝有」三條可操作心法。<b>「以有為之因，借般若之力，入無為之海，證無上之果」</b>——智慧正是讓福德在無常中依然「不盡」的根本防腐劑。</p></div></div>
+<script id="wy-c30p4-js">(function(){
+var CH=document.querySelectorAll("section.chapter");
+var BTN=document.getElementById("c30p4Btn"),BOX=document.getElementById("c30p4Box"),MODAL=document.getElementById("c30p4Modal");
+if(!CH.length||!BTN||!BOX||!MODAL)return;
+var TARGET=3;
+function curIdx(){var lim=window.innerHeight*0.35,idx=-1;for(var i=0;i<CH.length;i++){if(CH[i].getBoundingClientRect().top<lim)idx=i;}return idx;}
+var FSEL="#wyVideoFab,.wy-video-fab,#vidFab,.vid-fab,#videoFab,#wyVideoBtn,#wyFab,#wy-fab,#vid-floating,#floatingYt,.video-fab,.wy-vbtn,.floating-yt",_fab,_ft=false;
+function fab(){if(_fab&&_fab.isConnected)return _fab;if(_ft)return _fab;_ft=true;_fab=document.querySelector(FSEL);return _fab;}
+function place(){
+  var base=null,eb=document.querySelector(".wy-ebox");
+  if(eb){var r=eb.getBoundingClientRect();if(r.height>4)base=Math.round(window.innerHeight-r.top)+8;}
+  if(base===null){var fEl=fab();if(fEl){var fr=fEl.getBoundingClientRect(),st=getComputedStyle(fEl);if(fr.height>0&&st.display!=="none"&&st.visibility!=="hidden")base=Math.round(window.innerHeight-fr.top)+10;}}
+  if(base===null)base=78;
+  BOX.style.bottom=base+"px";
+}
+function upd(){place();BOX.classList.toggle("show",curIdx()===TARGET);}
+var tk=false;function onS(){if(!tk){tk=true;requestAnimationFrame(function(){tk=false;upd();});}}
+window.addEventListener("scroll",onS,{passive:true});window.addEventListener("resize",onS);
+BTN.addEventListener("click",function(){MODAL.classList.add("open");});
+MODAL.addEventListener("click",function(e){if(e.target===MODAL||e.target.id==="c30p4Close")MODAL.classList.remove("open");});
+document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classList.remove("open");});
+upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
+})();</script>
+<!--WY-C30P4:END-->
 </body>
 </html>
