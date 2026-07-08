@@ -711,5 +711,58 @@ document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classL
 upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
 })();</script>
 <!--WY-C30P2:END-->
+<!--WY-C30P3:BEGIN-->
+<style id="wy-c30p3-css">
+.c30p3-fabbox{position:fixed;right:22px;bottom:78px;z-index:121;display:none;}
+.c30p3-fabbox.show{display:block;}
+.c30p3-btn{display:inline-flex;align-items:center;gap:9px;font-family:"Noto Sans TC",sans-serif;letter-spacing:.5px;color:#f7ecd2;background:linear-gradient(135deg,#573f38,#2e2420);padding:8px 15px;border-radius:22px;border:1px solid rgba(184,134,11,.6);box-shadow:0 4px 16px rgba(0,0,0,.3);cursor:pointer;opacity:.96;transition:opacity .3s,transform .2s,box-shadow .2s;}
+.c30p3-btn:hover{opacity:1;transform:translateY(-2px);box-shadow:0 6px 22px rgba(184,134,11,.5);}
+.c30p3-ic{font-size:15px;line-height:1;color:#ecc978;}
+.c30p3-ls{display:flex;flex-direction:column;align-items:flex-start;line-height:1.22;}
+.c30p3-l1{font-size:10.5px;font-weight:500;opacity:.82;white-space:nowrap;}
+.c30p3-l2{font-size:13px;font-weight:700;color:#faf1d8;white-space:nowrap;}
+.c30p3-modal{position:fixed;inset:0;z-index:200;display:none;align-items:center;justify-content:center;background:rgba(28,20,12,.58);padding:16px;}
+.c30p3-modal.open{display:flex;}
+.c30p3-card{position:relative;background:#fbf7ee;max-width:900px;width:100%;max-height:88vh;overflow:auto;border:1px solid #d8c8ac;border-radius:14px;padding:30px 24px 22px;box-shadow:0 18px 50px rgba(0,0,0,.4);}
+.c30p3-card h3{margin:0 0 2px;font-family:"Noto Serif TC",serif;font-size:20px;color:#8b5e3c;}
+.c30p3-card .sub{margin:0 0 14px;font-family:"Noto Sans TC",sans-serif;font-size:13px;color:#6b5b4b;}
+.c30p3-close{position:absolute;top:12px;right:16px;width:34px;height:34px;border:none;border-radius:50%;background:#efe6d4;color:#8b5e3c;font-size:22px;line-height:1;cursor:pointer;z-index:2;}
+.c30p3-close:hover{background:#e3d5b8;}
+.c30p3-tbl{width:100%;border-collapse:collapse;font-family:"Noto Sans TC",sans-serif;font-size:13px;margin:.3em 0 1.2em;}
+.c30p3-tbl caption{font-family:"Noto Serif TC",serif;font-weight:700;color:#8b5e3c;font-size:14.5px;text-align:left;margin:.6em 0 .35em;line-height:1.5;}
+.c30p3-tbl th,.c30p3-tbl td{border:1px solid #d8c8ac;padding:.45em .6em;text-align:left;vertical-align:top;line-height:1.6;}
+.c30p3-tbl thead th{background:#8b5e3c;color:#f7ecd2;font-weight:700;}
+.c30p3-tbl td:first-child{white-space:nowrap;color:#8b5e3c;font-weight:700;background:#f0e8d8;}
+.c30p3-tbl tbody tr:nth-child(even) td{background:#f6efe0;}
+.c30p3-tbl b{color:#8b2500;}
+.c30p3-note{font-size:12px;color:#5a4e3a;line-height:1.9;background:#f6efe0;border-left:3px solid #c4956a;border-radius:0 6px 6px 0;padding:10px 13px;margin:4px 0 0;}
+.c30p3-note b{color:#8b2500;}
+@media(max-width:900px){.c30p3-fabbox{right:14px;}.c30p3-tbl{font-size:11.5px;}.c30p3-card{padding:26px 14px 16px;}}
+</style>
+<div class="c30p3-fabbox" id="c30p3Box"><button class="c30p3-btn" id="c30p3Btn" type="button" aria-label="開啟全景總表"><span class="c30p3-ic">▦</span><span class="c30p3-ls"><span class="c30p3-l1">本品 · 教化眾生立六波羅蜜</span><span class="c30p3-l2">六度與六道之辯證 · 從力到道</span></span></button></div><div class="c30p3-modal" id="c30p3Modal" role="dialog" aria-modal="true" aria-label="全景總表"><div class="c30p3-card"><button class="c30p3-close" id="c30p3Close" type="button" aria-label="關閉">×</button><h3>卷三十·第三品 教化眾生立六波羅蜜 · 全景總表</h3><p class="sub">卷三十・第三品｜三利三樂・眾生假名與六道之辯・檀戒忍進禪慧六度教化・從力到道</p><table class="c30p3-tbl"><caption>一、眾生論：三利三樂與六道之辯（所化之機）</caption><thead><tr><th>環節</th><th>內容</th></tr></thead><tbody><tr><td>三利三樂時間軸</td><td>今世利樂（飲食衣服除飢渴）→後世利樂（世間六度得人天樂）→出世利樂（出世六度得無為常樂）——每層目的達成即暴露局限，局限正是登上一層的動力，根源於菩薩慈悲「徹於骨髓」的不滿足性</td></tr><tr><td>因緣不可強得</td><td>眾生罪故雖與其食而不得噉（如《餓鬼經》變成炭火），菩薩善知因緣不可強得，教令自行自得——救度方式由「施」轉「教」，「授人以漁」是本品「教化」二字的全部份量</td></tr><tr><td>恒河沙的對機善巧</td><td>「恒河沙」對新發意菩薩是攝心防亂的具體大數，對大菩薩則不以為數直面無量——恒河沙是「無量」的代名詞，是心理調節閥，非字面數量之限</td></tr><tr><td>眾生為假名</td><td>眾生於五蘊、十八界、十二入、十二因緣等眾多法中假名為天人牛馬，見法不見人唯是因緣聚；欲界善惡三品對稱（上：六欲天／地獄，中：人富貴／畜生，下：人卑賤／餓鬼）</td></tr><tr><td>六道之辯六番論證</td><td>阿修羅力與三十三天等（威力對等）、摩訶衍主六道（經傳分歧）、善惡三品對稱（3比3非3比2）、涅槃非報（跳出報之階梯）、心曲難近道（人道優於阿修羅之價值重估）、形類道地雙判準排除法——六番論證確立阿修羅別立第六道</td></tr></tbody></table><table class="c30p3-tbl"><caption>二、六度教化總覽（能化之法·從檀至禪）</caption><thead><tr><th>環節</th><th>內容</th></tr></thead><tbody><tr><td>檀波羅蜜·布施開三樂</td><td>貧為大苦故勸捨慳，訶慳貪招醜陋貧賤三世連鎖果報；布施一行破六煩惱（破慳結、滅瞋惱、除憍慢、裂疑網、除邪見、滅無明），開天上人中涅槃三樂之門，檀為六度初門餘行皆隨從</td></tr><tr><td>尸羅波羅蜜·戒為十喻</td><td>持戒拔三惡趣及人中下賤令得天人尊貴乃至佛道；戒十喻——大藏出珍寶、大護破賊、瓔珞莊嚴、大船渡海、大乘致寶、良藥破病、善知識世世隨逐、父母長育眾子，眾樂根本</td></tr><tr><td>羼提波羅蜜·忍十喻與二忍</td><td>忍十喻——出家之力、伏諸惡、守護施戒、大鎧、良藥、善勝、大藏、大舟、磫𥗫（猪揩金山益發其明）、求佛度生之利器；三層思惟（瞋他即自害、眾生為煩惱所牽、視怨如父母視嬰孩）訶瞋入眾生忍，再思惟諸法和合假名眾生無我無作者入法忍</td></tr><tr><td>毘梨耶波羅蜜·精進多重結構</td><td>精進二相（生善除惡）、三相（欲造·精進作·不休息）、四相（四正勤：已生惡斷·未生惡防·未生善生·已生善長）；「行五波羅蜜，則是毘梨耶波羅蜜」——精進是貫穿五度全體的相續力</td></tr><tr><td>禪波羅蜜·棄小樂得大樂</td><td>禪定九重勝相（清淨樂內樂自在樂等）對比五欲不淨樂如獄如病，捨小樂得大樂；禪為實智初門如燈在密室其明得用；四無量八背捨勝處神通辯才等甚深功德皆從禪生</td></tr></tbody></table><table class="c30p3-tbl"><caption>三、般若攝持與從力到道（結穴·總持）</caption><thead><tr><th>環節</th><th>內容</th></tr></thead><tbody><tr><td>慧眼第一無慧如盲</td><td>若無慧眼雖有肉眼猶故是盲，與畜生無異，如牛駱駝穿鼻隨人；智慧為諸寶之最、諸利器之最、住智慧山頂無憂——智慧刀能斷無始煩惱生死連鎖，智慧力故能具六波羅蜜</td></tr><tr><td>般若統攝五度</td><td>前五度若無般若統攝皆成有漏世福不能至究竟；菩薩教化或以口教、或現神足光明、或夢中作因緣，皆為令眾生住六波羅蜜，故經言「當學般若波羅蜜」以攝五度</td></tr><tr><td>前四章後六章一體兩面</td><td>前四章解「為誰」（眾生論：三利三樂、假名分類、六道之辯），後六章解「教什麼」（六度論：檀戒忍進禪慧）——所化之機與能化之法本是一體，知六道差別正是為了行六度萬行</td></tr><tr><td>從力到道的昇華</td><td>阿修羅以「執力好鬥、心曲難近道」為典型；六度以「捨」為性——檀捨外財、尸羅捨惡行、羼提捨瞋我、毘梨耶捨懈怠、禪捨散亂、般若捨我執，正是由「力」轉「道」的完整光譜</td></tr><tr><td>核心意象總覽</td><td>母親（徹骨慈悲過於父母念子）、恒河沙（無量代名對機善巧）、天秤（善惡三品因果對稱）、藕孔（阿修羅威力等天帝釋兵入藕根孔自藏）——四句記憶口訣總攝全品要義</td></tr></tbody></table><p class="c30p3-note">本品以「教化眾生立六波羅蜜」為題，前四章確立「六道眾生」為教化對象——三利三樂標出慈悲不滿足的引擎，六道之辯以六番論證為阿修羅正名；後六章逐一展開檀戒忍進禪慧的教化次第，終以般若統攝五度收束。全品的真正精神是<b>「始於不忍眾生苦，終於不著眾生相」</b>——阿修羅的「握拳」（執力難近道）與般若的「攤掌」（不著眾生相攝持六度），正是「從力到道」昇華的最終解答。</p></div></div>
+<script id="wy-c30p3-js">(function(){
+var CH=document.querySelectorAll("section.chapter");
+var BTN=document.getElementById("c30p3Btn"),BOX=document.getElementById("c30p3Box"),MODAL=document.getElementById("c30p3Modal");
+if(!CH.length||!BTN||!BOX||!MODAL)return;
+var TARGET=2;
+function curIdx(){var lim=window.innerHeight*0.35,idx=-1;for(var i=0;i<CH.length;i++){if(CH[i].getBoundingClientRect().top<lim)idx=i;}return idx;}
+var FSEL="#wyVideoFab,.wy-video-fab,#vidFab,.vid-fab,#videoFab,#wyVideoBtn,#wyFab,#wy-fab,#vid-floating,#floatingYt,.video-fab,.wy-vbtn,.floating-yt",_fab,_ft=false;
+function fab(){if(_fab&&_fab.isConnected)return _fab;if(_ft)return _fab;_ft=true;_fab=document.querySelector(FSEL);return _fab;}
+function place(){
+  var base=null,eb=document.querySelector(".wy-ebox");
+  if(eb){var r=eb.getBoundingClientRect();if(r.height>4)base=Math.round(window.innerHeight-r.top)+8;}
+  if(base===null){var fEl=fab();if(fEl){var fr=fEl.getBoundingClientRect(),st=getComputedStyle(fEl);if(fr.height>0&&st.display!=="none"&&st.visibility!=="hidden")base=Math.round(window.innerHeight-fr.top)+10;}}
+  if(base===null)base=78;
+  BOX.style.bottom=base+"px";
+}
+function upd(){place();BOX.classList.toggle("show",curIdx()===TARGET);}
+var tk=false;function onS(){if(!tk){tk=true;requestAnimationFrame(function(){tk=false;upd();});}}
+window.addEventListener("scroll",onS,{passive:true});window.addEventListener("resize",onS);
+BTN.addEventListener("click",function(){MODAL.classList.add("open");});
+MODAL.addEventListener("click",function(e){if(e.target===MODAL||e.target.id==="c30p3Close")MODAL.classList.remove("open");});
+document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classList.remove("open");});
+upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
+})();</script>
+<!--WY-C30P3:END-->
 </body>
 </html>
