@@ -658,5 +658,58 @@ document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classL
 upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
 })();</script>
 <!--WY-C30P1:END-->
+<!--WY-C30P2:BEGIN-->
+<style id="wy-c30p2-css">
+.c30p2-fabbox{position:fixed;right:22px;bottom:78px;z-index:121;display:none;}
+.c30p2-fabbox.show{display:block;}
+.c30p2-btn{display:inline-flex;align-items:center;gap:9px;font-family:"Noto Sans TC",sans-serif;letter-spacing:.5px;color:#f7ecd2;background:linear-gradient(135deg,#573f38,#2e2420);padding:8px 15px;border-radius:22px;border:1px solid rgba(184,134,11,.6);box-shadow:0 4px 16px rgba(0,0,0,.3);cursor:pointer;opacity:.96;transition:opacity .3s,transform .2s,box-shadow .2s;}
+.c30p2-btn:hover{opacity:1;transform:translateY(-2px);box-shadow:0 6px 22px rgba(184,134,11,.5);}
+.c30p2-ic{font-size:15px;line-height:1;color:#ecc978;}
+.c30p2-ls{display:flex;flex-direction:column;align-items:flex-start;line-height:1.22;}
+.c30p2-l1{font-size:10.5px;font-weight:500;opacity:.82;white-space:nowrap;}
+.c30p2-l2{font-size:13px;font-weight:700;color:#faf1d8;white-space:nowrap;}
+.c30p2-modal{position:fixed;inset:0;z-index:200;display:none;align-items:center;justify-content:center;background:rgba(28,20,12,.58);padding:16px;}
+.c30p2-modal.open{display:flex;}
+.c30p2-card{position:relative;background:#fbf7ee;max-width:900px;width:100%;max-height:88vh;overflow:auto;border:1px solid #d8c8ac;border-radius:14px;padding:30px 24px 22px;box-shadow:0 18px 50px rgba(0,0,0,.4);}
+.c30p2-card h3{margin:0 0 2px;font-family:"Noto Serif TC",serif;font-size:20px;color:#8b5e3c;}
+.c30p2-card .sub{margin:0 0 14px;font-family:"Noto Sans TC",sans-serif;font-size:13px;color:#6b5b4b;}
+.c30p2-close{position:absolute;top:12px;right:16px;width:34px;height:34px;border:none;border-radius:50%;background:#efe6d4;color:#8b5e3c;font-size:22px;line-height:1;cursor:pointer;z-index:2;}
+.c30p2-close:hover{background:#e3d5b8;}
+.c30p2-tbl{width:100%;border-collapse:collapse;font-family:"Noto Sans TC",sans-serif;font-size:13px;margin:.3em 0 1.2em;}
+.c30p2-tbl caption{font-family:"Noto Serif TC",serif;font-weight:700;color:#8b5e3c;font-size:14.5px;text-align:left;margin:.6em 0 .35em;line-height:1.5;}
+.c30p2-tbl th,.c30p2-tbl td{border:1px solid #d8c8ac;padding:.45em .6em;text-align:left;vertical-align:top;line-height:1.6;}
+.c30p2-tbl thead th{background:#8b5e3c;color:#f7ecd2;font-weight:700;}
+.c30p2-tbl td:first-child{white-space:nowrap;color:#8b5e3c;font-weight:700;background:#f0e8d8;}
+.c30p2-tbl tbody tr:nth-child(even) td{background:#f6efe0;}
+.c30p2-tbl b{color:#8b2500;}
+.c30p2-note{font-size:12px;color:#5a4e3a;line-height:1.9;background:#f6efe0;border-left:3px solid #c4956a;border-radius:0 6px 6px 0;padding:10px 13px;margin:4px 0 0;}
+.c30p2-note b{color:#8b2500;}
+@media(max-width:900px){.c30p2-fabbox{right:14px;}.c30p2-tbl{font-size:11.5px;}.c30p2-card{padding:26px 14px 16px;}}
+</style>
+<div class="c30p2-fabbox" id="c30p2Box"><button class="c30p2-btn" id="c30p2Btn" type="button" aria-label="開啟全景總表"><span class="c30p2-ic">▦</span><span class="c30p2-ls"><span class="c30p2-l1">本品 · 欲滿眾生願</span><span class="c30p2-l2">菩薩經濟學 · 可得願與名字一切</span></span></button></div><div class="c30p2-modal" id="c30p2Modal" role="dialog" aria-modal="true" aria-label="全景總表"><div class="c30p2-card"><button class="c30p2-close" id="c30p2Close" type="button" aria-label="關閉">×</button><h3>卷三十·第二品 欲滿眾生願 · 全景總表</h3><p class="sub">卷三十・第二品｜菩薩二業供佛度生・可得願與世間願・下中上三願次第・真身化身・名字一切非實一切</p><table class="c30p2-tbl"><caption>一、菩薩經濟學與願的邊界（本品主骨架）</caption><thead><tr><th>環節</th><th>內容</th></tr></thead><tbody><tr><td>經文張力</td><td>「欲滿一切眾生所願：衣服飲食臥具塗香車乘房舍床榻燈燭等，當學般若波羅蜜」——左半句最具體物質的八物，右半句歸於最抽象的般若，全品解此跨度邏輯</td></tr><tr><td>菩薩二業雙軌</td><td>菩薩業有二：供養諸佛（向上求法，得無量福德）、度脫眾生（向下迴向，持福德利益眾生）——如賈客入海採寶、小王供養大王得授權，滿願力是資本積累與權威護持的結構性產物</td></tr><tr><td>可得願與不可得願</td><td>不可得願如籌量虛空、求水中月，結構本不成立；可得願如鑽木求火乃至佛果，皆循因緣可致——本經「滿一切願」特指可得願中的<b>世間願</b>（八物所須）</td></tr><tr><td>下中上三願次第</td><td>下願今世樂（飲食衣服）、中願後世樂（十善四梵行）、上願涅槃樂——眾生多著今樂少求後樂，故先攝多數再帶少數，層層退讓卻不遺捨任何眾生（連不樂者亦與飲食結緣）</td></tr><tr><td>頻頭居士譬喻</td><td>七寶大床開四大門鳴鼓放光，十方眾生聞聲光而來，仰視虛空雨百味食，恣眾生所欲已然後說法令離四食住阿鞞跋致——先給你想要的，再給你需要的，是菩薩入世經濟學的完整迴向</td></tr></tbody></table><table class="c30p2-tbl"><caption>二、真身化身與名字一切（能力判分與語言哲學）</caption><thead><tr><th>環節</th><th>內容</th></tr></thead><tbody><tr><td>佛在世時仍飢餓之詰難</td><td>詰難訴諸歷史經驗：佛在世尚有眾生飢餓天不降雨，佛猶不能滿願，云何菩薩能滿？論主先以十地菩薩入首楞嚴三昧廣大利益反顯，「菩薩利益如是，何況於佛」</td></tr><tr><td>真身化身二判</td><td>真身（法性身）遍虛空照十方說法無願不滿；化身（應化身）受人法有寒熱飢渴老病死，然內心智慧神德與真佛無異——化身不滿眾生願非不能，是「不與雜毒美食」之悲心善巧</td></tr><tr><td>接收端錯誤</td><td>龍王一心降雨，在人為水、在餓鬼為炭火——供給端佛之恩澤已遍滿，故障出在接收端業力頻率；同一外境不同業感眾生所見迥異，為下一節「名字一切」伏筆</td></tr><tr><td>名字一切非實一切</td><td>「滿一切」是名字一切（修辭性全稱）非邏輯絕對之實一切，如《法句》「一切皆懼死」亦有無色界無身無杖痛之例外——滿一切眾生願，謂「應可得者」，菩薩心無齊限而眾生罪厚障故不能得</td></tr><tr><td>羅頻周比丘五層滿願失敗</td><td>自乞六日無得→同道送食鳥持去→目連神力食變泥→舍利弗親送口自合→佛親送方得食——業力阻抗層層加深，唯佛福德突破；責任在受者一端，故說「菩薩無咎」</td></tr></tbody></table><table class="c30p2-tbl"><caption>三、八物名相與般若攝檀（生活關懷與般若統攝）</caption><thead><tr><th>環節</th><th>內容</th></tr></thead><tbody><tr><td>八物訓詁</td><td>飲食（揣食增益四食）、衣服（從眾生生／從草木生／天衣）、臥具（床榻被褥幃帳枕）、塗香（栴檀木／雜香末）、乘（象馬車輿）、房舍（障寒熱風雨賊盜）、燈燭（脂膏蘇油漆蠟明珠）、諸物總攝一切所須</td></tr><tr><td>選材三條標準</td><td>經文不說燒香妙華，因「華非常有，亦速萎爛」；燒香寒時所須熱時為患，唯塗香寒熱通用（寒雜沈水取溫、熱雜栴檀取涼）——選材標準是常有、長效、通用，真慈悲具高度適應性</td></tr><tr><td>關懷次第</td><td>飲食為活著第一要件→衣服禦寒體面→塗香治身垢臭→臥具休息安眠→房舍蔽寒雨→燈燭破黑闇——層層遞進的溫暖關懷次第</td></tr><tr><td>般若和合得名檀波羅蜜</td><td>六度非六個並列之物，前五度若無般若「三輪體空」為內在底色只是世間善行不成波羅蜜——「以般若波羅蜜和合故，得名檀波羅蜜」，當學般若即是把布施做透到底</td></tr><tr><td>般若破近遠相彈指遍十方</td><td>所滿非一國土一閻浮提，是十方世界六趣眾生，非但布施所能辦；般若破近遠相、破一切眾生相非一切眾生相除諸礙，彈指之頃化無量身遍至十方——神通利益要從般若出生</td></tr></tbody></table><p class="c30p2-note">本品以「八物供養」起，至「般若彈指化身遍十方」終，完整鋪展菩薩從<b>布施經濟學</b>到<b>般若空性學</b>的內在邏輯：可得願與世間願劃定滿願邊界、下中上三願次第是教育學的方便鉤牽、真身化身二判與名字一切之辨釐清「佛能否盡滿」的千年難題，終以般若統攝六度——慈悲不是濫情，智慧不是冷峻，真正的滿願是兩者的合一。</p></div></div>
+<script id="wy-c30p2-js">(function(){
+var CH=document.querySelectorAll("section.chapter");
+var BTN=document.getElementById("c30p2Btn"),BOX=document.getElementById("c30p2Box"),MODAL=document.getElementById("c30p2Modal");
+if(!CH.length||!BTN||!BOX||!MODAL)return;
+var TARGET=1;
+function curIdx(){var lim=window.innerHeight*0.35,idx=-1;for(var i=0;i<CH.length;i++){if(CH[i].getBoundingClientRect().top<lim)idx=i;}return idx;}
+var FSEL="#wyVideoFab,.wy-video-fab,#vidFab,.vid-fab,#videoFab,#wyVideoBtn,#wyFab,#wy-fab,#vid-floating,#floatingYt,.video-fab,.wy-vbtn,.floating-yt",_fab,_ft=false;
+function fab(){if(_fab&&_fab.isConnected)return _fab;if(_ft)return _fab;_ft=true;_fab=document.querySelector(FSEL);return _fab;}
+function place(){
+  var base=null,eb=document.querySelector(".wy-ebox");
+  if(eb){var r=eb.getBoundingClientRect();if(r.height>4)base=Math.round(window.innerHeight-r.top)+8;}
+  if(base===null){var fEl=fab();if(fEl){var fr=fEl.getBoundingClientRect(),st=getComputedStyle(fEl);if(fr.height>0&&st.display!=="none"&&st.visibility!=="hidden")base=Math.round(window.innerHeight-fr.top)+10;}}
+  if(base===null)base=78;
+  BOX.style.bottom=base+"px";
+}
+function upd(){place();BOX.classList.toggle("show",curIdx()===TARGET);}
+var tk=false;function onS(){if(!tk){tk=true;requestAnimationFrame(function(){tk=false;upd();});}}
+window.addEventListener("scroll",onS,{passive:true});window.addEventListener("resize",onS);
+BTN.addEventListener("click",function(){MODAL.classList.add("open");});
+MODAL.addEventListener("click",function(e){if(e.target===MODAL||e.target.id==="c30p2Close")MODAL.classList.remove("open");});
+document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classList.remove("open");});
+upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
+})();</script>
+<!--WY-C30P2:END-->
 </body>
 </html>
