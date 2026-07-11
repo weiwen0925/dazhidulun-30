@@ -1734,5 +1734,54 @@ document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classL
 upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
 })();</script>
 <!--WY-BH30P5:END-->
+<!--WY-BH30P6:BEGIN-->
+<style id="wy-bh30p6-css">
+.bh30p6-fabbox{position:fixed;right:22px;bottom:150px;z-index:123;display:none;}
+.bh30p6-fabbox.show{display:block;}
+.bh30p6-btn{display:inline-flex;align-items:center;gap:9px;font-family:"Noto Sans TC",sans-serif;letter-spacing:.5px;color:#f7ecd2;background:linear-gradient(135deg,#4a5a68,#232d36);padding:8px 15px;border-radius:22px;border:1px solid rgba(150,180,205,.55);box-shadow:0 4px 16px rgba(0,0,0,.32);cursor:pointer;opacity:.96;transition:opacity .3s,transform .2s,box-shadow .2s;}
+.bh30p6-btn:hover{opacity:1;transform:translateY(-2px);box-shadow:0 6px 22px rgba(120,160,200,.5);}
+.bh30p6-ic{font-size:15px;line-height:1;color:#bcd4ea;}
+.bh30p6-ls{display:flex;flex-direction:column;align-items:flex-start;line-height:1.22;}
+.bh30p6-l1{font-size:10.5px;font-weight:500;opacity:.82;white-space:nowrap;}
+.bh30p6-l2{font-size:13px;font-weight:700;color:#eef4fa;white-space:nowrap;}
+.bh30p6-modal{position:fixed;inset:0;z-index:200;display:none;align-items:center;justify-content:center;background:rgba(22,26,30,.6);padding:16px;}
+.bh30p6-modal.open{display:flex;}
+.bh30p6-card{position:relative;background:#fbf7ee;max-width:1080px;width:100%;max-height:90vh;overflow:auto;border:1px solid #d3cdbf;border-radius:14px;padding:28px 22px 20px;box-shadow:0 18px 50px rgba(0,0,0,.4);}
+.bh30p6-card h3{margin:0 0 2px;font-family:"Noto Serif TC",serif;font-size:20px;color:#3f5160;}
+.bh30p6-card .sub{margin:0 0 12px;font-family:"Noto Sans TC",sans-serif;font-size:12.5px;color:#5b6b78;}
+.bh30p6-close{position:absolute;top:12px;right:16px;width:34px;height:34px;border:none;border-radius:50%;background:#eceef0;color:#3f5160;font-size:22px;line-height:1;cursor:pointer;z-index:2;}
+.bh30p6-close:hover{background:#dde2e6;}
+.bh30p6-tbl{width:100%;border-collapse:collapse;font-size:12.8px;margin:.2em 0 1em;}
+.bh30p6-tbl caption{font-family:"Noto Serif TC",serif;font-weight:700;color:#3f5160;font-size:14px;text-align:left;margin:.4em 0 .5em;}
+.bh30p6-tbl th,.bh30p6-tbl td{border:1px solid #d8d2c4;padding:.5em .65em;text-align:left;vertical-align:top;line-height:1.72;}
+.bh30p6-tbl thead th{background:#3f5160;color:#eef4fa;font-weight:700;position:sticky;top:0;}
+.bh30p6-tbl thead th:nth-child(1){width:32%;}.bh30p6-tbl thead th:nth-child(2){width:41%;}.bh30p6-tbl thead th:nth-child(3){width:27%;}
+.bh30p6-src{font-family:"Noto Serif TC",serif;color:#5a4636;background:#f6efe0;letter-spacing:.3px;}
+.bh30p6-guan{background:#eef2f5;color:#37505f;}
+.bh30p6-tbl tbody tr:nth-child(even) td{background:#faf6ee;}
+.bh30p6-tbl tbody tr:nth-child(even) td.bh30p6-guan{background:#e8eef2;}
+.bh30p6-tbl b{color:#8b2500;}
+.bh30p6-guan b{color:#2f6b5a;}
+.bh30p6-note{font-size:12px;color:#4a5560;line-height:1.95;background:#eef2f5;border-left:3px solid #7f9cb5;border-radius:0 6px 6px 0;padding:11px 14px;margin:2px 0 0;}
+.bh30p6-note b{color:#8b2500;}
+@media(max-width:900px){.bh30p6-fabbox{right:14px;}.bh30p6-tbl{font-size:11px;}.bh30p6-card{padding:22px 12px 14px;}}
+</style>
+<div class="bh30p6-fabbox" id="bh30p6Box"><button class="bh30p6-btn" id="bh30p6Btn" type="button" aria-label="開啟白話翻譯表"><span class="bh30p6-ic">譯</span><span class="bh30p6-ls"><span class="bh30p6-l1">本品 · 原文·白話·中觀</span><span class="bh30p6-l2">白話翻譯表</span></span></button></div><div class="bh30p6-modal" id="bh30p6Modal" role="dialog" aria-modal="true"><div class="bh30p6-card"><button class="bh30p6-close" id="bh30p6Close" type="button" aria-label="關閉">×</button><h3>卷三十 · 第6品 白話翻譯表（一念遍至十方品）</h3><p class="sub">大智度論卷三十·一念遍至十方品 · 原文↔白話↔中觀概念 逐段對照</p><table class="bh30p6-tbl"><caption>一念遍至十方品 · 原文｜白話翻譯｜中觀概念（共9段）</caption><thead><tr><th>原文</th><th>白話翻譯</th><th>中觀概念</th></tr></thead><tbody><tr><td class="bh30p6-src">「復次，舍利弗！菩薩摩訶薩欲一發意至十方如恒河沙等世界，當學般若波羅蜜！」</td><td>「再者，舍利弗！菩薩摩訶薩如果想要以一念之間到達十方如恒河沙數那麼多的世界，就應當學習般若波羅蜜！」</td><td class="bh30p6-guan"><b>經文總綱·所學非神通乃般若</b>——經文以「欲……當學般若波羅蜜」的句式收束：成就一念遍至十方的不可思議神通，所當學的並非某種飛行之術，而是般若波羅蜜——智慧的圓滿，暗示一念遍至的關鍵不在腳力，而在見地。</td></tr><tr><td class="bh30p6-src">菩薩得身通變化力，作十方恒河沙等身，於十方恒河沙等世界一時能到。</td><td>菩薩證得了身通變化的能力，能夠化現出十方恒河沙數那麼多的身形，在十方恒河沙數那麼多的世界中同一時間都能到達。</td><td class="bh30p6-guan"><b>身通變化·同時性取代速度</b>——「作十方恒河沙等身」，不是一個身體高速穿梭各地，而是同時化現無量身，於無量世界「一時能到」；「一時」二字，已把問題從速度轉向了同時性，是後文一切辯證的種子。</td></tr><tr><td class="bh30p6-src">問曰：如經說「一彈指頃有六十念」，若一念中能至一方恒河沙等世界，尚不可信，何況十方恒河沙等世界，時少而所到處多？</td><td>問：正如經中所說「一彈指之間有六十念」，如果一念之中就能到達一方恒河沙數那麼多的世界，尚且令人難以相信，更何況是十方恒河沙數那麼多的世界呢？時間這麼短，要到達的地方卻這麼多，這在道理上說得通嗎？</td><td class="bh30p6-guan"><b>時少處多之疑·常識的質難</b>——此問以極短之時（一念）對照極廣之空間（十方恒沙世界），依世俗常識的因果尺度而言近乎不可能，是全品第一組問答的發端，逼出下文「五事不可思議」的解答。</td></tr><tr><td class="bh30p6-src">答曰：經說：「五事不可思議，所謂眾生多少，業果報，坐禪人力，諸龍力，諸佛力。於五不可思議中，佛力最不可思議！」菩薩入深禪定，生不可思議神通故，一念中悉到十方諸佛世界。</td><td>答：經中說：「有五件事是凡情思量所不能及的，也就是眾生的數量多少、業因果報、坐禪人的定力、諸龍的力量、諸佛的威力。在這五種不可思議之中，又以佛力最為不可思議！」菩薩因為入於甚深禪定，生起不可思議的神通力，所以能在一念之中全部到達十方諸佛的世界。</td><td class="bh30p6-guan"><b>五事不可思議·佛力居頂</b>——世間本有非常情所能思量的五件事，佛力尤為其中之最；菩薩甚深禪定所生的不可思議神通即屬此列，故不受世俗因果常規、速度公式的限制，這是解開「時少處多」之疑的第一步。</td></tr><tr><td class="bh30p6-src">如說四種神通中，唯佛、菩薩有如意疾遍神通。若金翅鳥子，始從㲉出，從一須彌至一須彌；諸菩薩亦如是，以無生忍力故，破諸煩惱無明㲉，即時一念中作無量身，遍至十方。</td><td>正如經論所說，四種神通之中，只有佛與菩薩擁有隨心自在、疾速周遍的神通。就像金翅鳥的幼鳥，才剛剛破殼而出，就能從一座須彌山飛到另一座須彌山；諸菩薩也是這樣，憑藉無生法忍的力量，破除種種煩惱無明所結的殼，當下一念之中就能化作無量的身形，周遍到達十方。</td><td class="bh30p6-guan"><b>金翅鳥破殼喻·無明如殼</b>——雛鳥破殼即能遠飛須彌，喻菩薩以無生忍力破煩惱無明之殼，一念即能遍至十方；真正的障礙不是空間的距離，而是尚未破除的那層無明之殼，殼一旦破，到達當下即成就。</td></tr><tr><td class="bh30p6-src">復次，菩薩一切無量世罪悉已消滅，以智慧力故，能轉一切諸法，所謂小能作大，大能作小；能以千萬無量劫為一日，又能以一日為千萬劫。是菩薩世間之主，所欲自在，何願不滿！如《毘摩羅詰經》所說：「以七夜為劫壽。」以是因緣故，菩薩乘神通力，能速疾超越十方世界。</td><td>再者，菩薩無量世以來所造的種種罪業都已經消滅淨盡，憑藉智慧的力量，能夠轉變一切諸法，也就是小的能變成大的，大的能變成小的；能把千萬無量劫的時間當作一日，也能把一日當作千萬劫。這樣的菩薩是世間之主，凡有所願都能自在成就，還有什麼心願不能滿足呢！正如《維摩詰經》所說：「以七個夜晚當作一劫的壽命。」正是因為這樣的緣故，菩薩憑藉神通之力，能夠迅速地超越十方世界。</td><td class="bh30p6-guan"><b>空間相對·時間延促同時</b>——「小能作大、大能作小」是空間非固定容器、而由心所定的相對性；「以劫為日、以日為劫」是時間延促同時、念劫圓融；二者皆說明時空並非固定不變的絕對尺度，菩薩故能於時空二者皆得自在，是為「世間之主，所欲自在」。</td></tr><tr><td class="bh30p6-src">問曰：前五不可思議中無有菩薩，今何以說菩薩不可思議？</td><td>問：前面所說的五種不可思議之中，並沒有列出「菩薩」，現在為什麼又說菩薩不可思議呢？</td><td class="bh30p6-guan"><b>分類之詰·五事無菩薩之名</b>——此問抓住一個語言分類上的破綻：五事不可思議明明只列了眾生、業果報、坐禪人力、龍力、佛力，並無「菩薩力」一項，那麼稱菩薩不可思議，是否於理不合？逼出下文「因中說果、果中說因」兩種語言邏輯的解答。</td></tr><tr><td class="bh30p6-src">答曰：或時因中說果，如日食百斤金，金不可食，因金得食，故言食金，是為因中說果。或時果中說因，如見好畫，言是好手，是為果中說因。</td><td>答：有時候是用「因」來說「果」，就像說「一天吃了一百斤金子」，金子本來不能吃，是因為有了金子才能換得食物，於是就直接說成「吃金子」，這就叫做「因中說果」。有時候則是用「果」來說「因」，就像看見一幅很好的畫，便稱讚說「這真是一雙好手」，這就叫做「果中說因」。</td><td class="bh30p6-guan"><b>因中說果·果中說因</b>——語言本有以因代果、以果代因的合法用法：「日食百斤金」是以工具性的因（金）指代它所成就的果（食）；「見好畫言是好手」是由果（畫）回溯讚歎其因（手）。理解這兩種語言邏輯，「五事無菩薩之名」的疑難便自然化解。</td></tr><tr><td class="bh30p6-src">諸菩薩亦如是，菩薩為因，諸佛為果，若說佛力不可思議，當知已說菩薩。以是故言：「欲一發意到十方恒河沙世界者，當學般若波羅蜜。」</td><td>諸菩薩的情形也是這樣，菩薩是「因」，諸佛是「果」，如果說佛力不可思議，就應當知道其中已經包含了菩薩在內。因此經文才說：「想要以一念之間到達十方恒河沙數世界的人，應當學習般若波羅蜜。」</td><td class="bh30p6-guan"><b>因果不二·菩薩如河諸佛如海</b>——依「因中說果、果中說因」之理，說佛力不可思議時，其實已將菩薩涵攝在內：菩薩為因、諸佛為果，如河流終歸大海、大海本自納百川，因果本是同一連續體，非二非異，故稱菩薩不可思議亦無不合。</td></tr></tbody></table><p class="bh30p6-note">卷三十品6「一念遍至十方品」原文·白話·中觀三欄對照。本品釋《般若經》「欲一發意至十方如恒河沙等世界，當學般若波羅蜜」一句：先以「五事不可思議」破凡夫「時少處多」之常識疑難，再以金翅鳥破殼喻揭示無明如殼、距離由殼而生；復以空間相對、時間延促同時，說明菩薩於時空自在；末以「因中說果、果中說因」二種語言邏輯，釋「五事無菩薩之名而仍稱不可思議」之惑，明菩薩為因、諸佛為果，因果不二，終歸於「以有空義故，一切法得成」的般若空義。</p></div></div>
+<script id="wy-bh30p6-js">(function(){
+var CH=document.querySelectorAll("section.chapter");
+var BTN=document.getElementById("bh30p6Btn"),BOX=document.getElementById("bh30p6Box"),MODAL=document.getElementById("bh30p6Modal");
+if(!CH.length||!BTN||!BOX||!MODAL)return;
+var TARGET=5;
+function curIdx(){var lim=window.innerHeight*0.35,idx=-1;for(var i=0;i<CH.length;i++){if(CH[i].getBoundingClientRect().top<lim)idx=i;}return idx;}
+/*BHPLACE*/function place(){var cands=[document.getElementById("c30p6Box")],eb=document.querySelector(".wy-ebox");if(eb)cands.push(eb);var best=null;for(var i=0;i<cands.length;i++){var el=cands[i];if(!el)continue;var cs=getComputedStyle(el);if(cs.display==="none")continue;var r=el.getBoundingClientRect();if(r.height<=4)continue;var v=Math.round(window.innerHeight-r.top)+8;if(best===null||v>best)best=v;}if(best!==null)BOX.style.bottom=best+"px";}
+function upd(){place();BOX.classList.toggle("show",curIdx()===TARGET);}
+var tk=false;function onS(){if(!tk){tk=true;requestAnimationFrame(function(){tk=false;upd();});}}
+window.addEventListener("scroll",onS,{passive:true});window.addEventListener("resize",onS);
+BTN.addEventListener("click",function(){MODAL.classList.add("open");});
+MODAL.addEventListener("click",function(e){if(e.target===MODAL||e.target.id==="bh30p6Close")MODAL.classList.remove("open");});
+document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classList.remove("open");});
+upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
+})();</script>
+<!--WY-BH30P6:END-->
 </body>
 </html>
