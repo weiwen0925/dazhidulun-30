@@ -1783,5 +1783,62 @@ document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classL
 upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
 })();</script>
 <!--WY-BH30P6:END-->
+<!--WY-BH30P7:BEGIN-->
+<style id="wy-bh30p7-css">
+.bh30p7-fabbox{position:fixed;right:22px;bottom:150px;z-index:123;display:none;}
+.bh30p7-fabbox.show{display:block;}
+.bh30p7-btn{display:inline-flex;align-items:center;gap:9px;font-family:"Noto Sans TC",sans-serif;letter-spacing:.5px;color:#f7ecd2;background:linear-gradient(135deg,#4a5a68,#232d36);padding:8px 15px;border-radius:22px;border:1px solid rgba(150,180,205,.55);box-shadow:0 4px 16px rgba(0,0,0,.32);cursor:pointer;opacity:.96;transition:opacity .3s,transform .2s,box-shadow .2s;}
+.bh30p7-btn:hover{opacity:1;transform:translateY(-2px);box-shadow:0 6px 22px rgba(120,160,200,.5);}
+.bh30p7-ic{font-size:15px;line-height:1;color:#bcd4ea;}
+.bh30p7-ls{display:flex;flex-direction:column;align-items:flex-start;line-height:1.22;}
+.bh30p7-l1{font-size:10.5px;font-weight:500;opacity:.82;white-space:nowrap;}
+.bh30p7-l2{font-size:13px;font-weight:700;color:#eef4fa;white-space:nowrap;}
+.bh30p7-modal{position:fixed;inset:0;z-index:200;display:none;align-items:center;justify-content:center;background:rgba(22,26,30,.6);padding:16px;}
+.bh30p7-modal.open{display:flex;}
+.bh30p7-card{position:relative;background:#fbf7ee;max-width:1080px;width:100%;max-height:90vh;overflow:auto;border:1px solid #d3cdbf;border-radius:14px;padding:28px 22px 20px;box-shadow:0 18px 50px rgba(0,0,0,.4);}
+.bh30p7-card h3{margin:0 0 2px;font-family:"Noto Serif TC",serif;font-size:20px;color:#3f5160;}
+.bh30p7-card .sub{margin:0 0 12px;font-family:"Noto Sans TC",sans-serif;font-size:12.5px;color:#5b6b78;}
+.bh30p7-close{position:absolute;top:12px;right:16px;width:34px;height:34px;border:none;border-radius:50%;background:#eceef0;color:#3f5160;font-size:22px;line-height:1;cursor:pointer;z-index:2;}
+.bh30p7-close:hover{background:#dde2e6;}
+.bh30p7-tbl{width:100%;border-collapse:collapse;font-size:12.8px;margin:.2em 0 1em;}
+.bh30p7-tbl caption{font-family:"Noto Serif TC",serif;font-weight:700;color:#3f5160;font-size:14px;text-align:left;margin:.4em 0 .5em;}
+.bh30p7-tbl th,.bh30p7-tbl td{border:1px solid #d8d2c4;padding:.5em .65em;text-align:left;vertical-align:top;line-height:1.72;}
+.bh30p7-tbl thead th{background:#3f5160;color:#eef4fa;font-weight:700;position:sticky;top:0;}
+.bh30p7-tbl thead th:nth-child(1){width:32%;}.bh30p7-tbl thead th:nth-child(2){width:41%;}.bh30p7-tbl thead th:nth-child(3){width:27%;}
+.bh30p7-src{font-family:"Noto Serif TC",serif;color:#5a4636;background:#f6efe0;letter-spacing:.3px;}
+.bh30p7-guan{background:#eef2f5;color:#37505f;}
+.bh30p7-tbl tbody tr:nth-child(even) td{background:#faf6ee;}
+.bh30p7-tbl tbody tr:nth-child(even) td.bh30p7-guan{background:#e8eef2;}
+.bh30p7-tbl b{color:#8b2500;}
+.bh30p7-guan b{color:#2f6b5a;}
+.bh30p7-note{font-size:12px;color:#4a5560;line-height:1.95;background:#eef2f5;border-left:3px solid #7f9cb5;border-radius:0 6px 6px 0;padding:11px 14px;margin:2px 0 0;}
+.bh30p7-note b{color:#8b2500;}
+@media(max-width:900px){.bh30p7-fabbox{right:14px;}.bh30p7-tbl{font-size:11px;}.bh30p7-card{padding:22px 12px 14px;}}
+</style>
+<div class="bh30p7-fabbox" id="bh30p7Box"><button class="bh30p7-btn" id="bh30p7Btn" type="button" aria-label="開啟白話翻譯表"><span class="bh30p7-ic">譯</span><span class="bh30p7-ls"><span class="bh30p7-l1">本品 · 原文·白話·中觀</span><span class="bh30p7-l2">白話翻譯表</span></span></button></div><div class="bh30p7-modal" id="bh30p7Modal" role="dialog" aria-modal="true"><div class="bh30p7-card"><button class="bh30p7-close" id="bh30p7Close" type="button" aria-label="關閉">×</button><h3>卷三十 · 第7品 白話翻譯表（一音遍十方願）</h3><p class="sub">大智度論卷三十·一音遍十方願 · 原文↔白話↔中觀概念 逐段對照</p><table class="bh30p7-tbl"><caption>一音遍十方願 · 原文｜白話翻譯｜中觀概念（共10段）</caption><thead><tr><th>原文</th><th>白話翻譯</th><th>中觀概念</th></tr></thead><tbody><tr><td class="bh30p7-src">「復次，舍利弗！菩薩摩訶薩欲發一音使十方如恒河沙等世界聞聲，當學般若波羅蜜！」</td><td>「再者，舍利弗！菩薩摩訶薩如果想要發出一種聲音，就讓十方如恒河沙數那麼多的世界都能聽聞得到，就應當學習般若波羅蜜！」</td><td class="bh30p7-guan"><b>經文總綱·音聲遍滿所依在般若</b>——經文以「欲……當學般若波羅蜜」的固定句式收束：能以一音遍傳十方恒沙世界的不可思議神通，其修學根柢不在音量或技巧的鍛鍊，而在般若波羅蜜——智慧的圓滿，暗示「遍滿」的關鍵不在聲音本身，而在能觀照聲音緣起性空的智慧。</td></tr><tr><td class="bh30p7-src">菩薩得六神通，增長梵聲相，過三千大千世界，至十方恒河沙等諸世界。</td><td>菩薩證得了六種神通，增長了清淨梵聲之相，聲音能超越三千大千世界，到達十方如恒河沙數那麼多的世界。</td><td class="bh30p7-guan"><b>梵聲相·神通所成之量</b>——菩薩音聲的傳播，是六神通修證所增長的果報之相，雖能跨越三千大千世界乃至十方恒沙世界，仍是神通力所成就的「相」，屬於因緣所生法，為下文「量」與「質」之辨埋下伏筆。</td></tr><tr><td class="bh30p7-src">問曰：若爾者，與佛音聲何異？</td><td>問：如果是這樣，那菩薩的音聲和佛的音聲又有什麼不同呢？</td><td class="bh30p7-guan"><b>量質之辨的發端</b>——此問直接把菩薩音聲與佛音聲並置比較，逼出下文「有數」與「無數」的根本分判，是全品音聲論的起手式。</td></tr><tr><td class="bh30p7-src">答曰：菩薩音聲有恒河沙等之數，佛音聲所到無有限數。如《密跡經》中所說：目連試佛音聲，極至西方，猶聞佛音，若如對面。</td><td>答：菩薩的音聲雖能傳到恒河沙數那麼多的世界，仍然是有數量可算的；而佛的音聲，所到之處卻沒有極限、無法計數。正如《密跡經》中所說：目連尊者曾經試探佛的音聲能傳多遠，一路飛到極遠的西方世界，卻仍然能聽見佛的音聲，就好像佛正在對面說法一樣。</td><td class="bh30p7-guan"><b>有數與無數·量變與質異</b>——菩薩音聲「有恒河沙等之數」，仍屬可數之量的擴張；佛音聲「所到無有限數」，是不可數的質的超越，二者非程度之差，而是範疇之異，此為全品音聲論的根本判分。</td></tr><tr><td class="bh30p7-src">問曰：若爾者，佛常在國土聚落說法教化，而閻浮提內人不至佛邊，則不得聞。何以知之？多有從遠方來欲聽法者故。</td><td>問：如果是這樣，那麼佛經常在某個國土村落中說法教化眾生，可是閻浮提之內，若有人沒有親自到佛的身邊，就聽不到佛說法。怎麼知道是這樣呢？因為有很多人是特地從遠方跋涉而來，就是為了要聽聞佛法的緣故。</td><td class="bh30p7-guan"><b>經驗反證·遍滿為何仍需近前</b>——此問以現實中「人須遠道而來聽法」的經驗事實，反詰「佛音遍滿十方」之說：若聲音真能無遠弗屆，何必千里迢迢親至佛前？逼出下文「密」與「不密」二種音聲的解答。</td></tr><tr><td class="bh30p7-src">答曰：佛音聲有二種：一為密中音聲，二為不密音聲。密音聲先已說，不密音聲，至佛邊乃聞。是亦有二種弟子：一為出世聖人，二為世間凡夫。出世聖人如目揵連等，能聞微密音聲；凡夫人隨其所近乃聞。</td><td>答：佛的音聲有兩種：一種是隱密而深微的音聲，一種是不隱密、顯露在外的音聲。隱密的音聲前面已經說過了；不隱密的音聲，則必須到佛的身邊才能聽聞得到。這也對應著兩種弟子：一種是已經出離世間的聖者，一種是世間的凡夫。出世的聖者如目犍連尊者等人，能夠聽聞到隱密深微的音聲；凡夫則要依照自己與佛距離的遠近，才能聽聞。</td><td class="bh30p7-guan"><b>密與不密·聞法能力由根機而分</b>——佛音本自遍滿，能否聽聞卻依聞者根機而有二分：聖者根熟，能聞微密之聲，不受空間限制；凡夫根鈍，僅能聞顯露之聲，故仍須親近佛邊。可知「遍滿」是佛聲的體性，「聞與不聞」則是眾生根機的差別，二者不可混為一談。</td></tr><tr><td class="bh30p7-src">復次，諸菩薩得入正位，離生死身，得法性真形，能見十方無量佛身，及遍炤光明，亦能得聞諸佛六十種極遠無量音聲。諸大菩薩雖未具足如佛音聲，於佛音聲中普得其分。
+是佛菩薩音聲有三種：
+一者、先世種善音聲因緣故，咽喉中得微妙四大，能出種種妙好遠近音聲，所謂一里、二里、三里、十里、百里、千里，乃至三千大千世界，音聲遍滿。
+二者、神通力故，咽喉四大出聲，遍滿三千大千世界，及十方恒河沙世界。
+三者、佛音聲常能遍滿十方虛空。</td><td>再者，諸位菩薩若已證入正位，脫離了生死輪迴的色身，證得法性所現的真實之身，就能見到十方無量的佛身，以及佛周遍照耀的光明，也能聽聞到諸佛六十種極為深遠、無量無邊的音聲。這些大菩薩雖然還沒有完全具足如佛一般的音聲，但在佛的音聲功德之中，也已普遍獲得了一份。
+佛與菩薩的音聲共有三種層次：
+第一種、是由於過去世種下善妙音聲的因緣，因此咽喉之中獲得了微妙的四大元素，能夠發出種種美妙、或遠或近的音聲，也就是能傳一里、二里、三里、十里、百里、千里，乃至遍滿三千大千世界那麼遠。
+第二種、是憑藉神通之力，咽喉四大所發出的聲音，能夠遍滿三千大千世界，乃至十方恒河沙數的世界。
+第三種、是佛的音聲，恆常能夠遍滿十方虛空。</td><td class="bh30p7-guan"><b>音聲三層級·從業報到法界體性</b>——第一層是先世善業所感的果報之聲，第二層是神通力所成就之聲，皆仍是「有所依待」的因緣生法；唯第三層「常能遍滿十方虛空」的佛音，不假因緣造作，直顯法界體性本自遍滿，是音聲論從「有為果報」層層上探至「無為法性」的完整階梯。</td></tr><tr><td class="bh30p7-src">問曰：若佛音聲常能遍滿，今眾生何以不得常聞？</td><td>問：如果佛的音聲恆常都能遍滿十方虛空，那麼現今的眾生，為什麼不能經常聽聞得到呢？</td><td class="bh30p7-guan"><b>遍滿與聞否的落差之問</b>——此問緊扣上文「佛音聲常能遍滿十方虛空」一語，追問一個現實的落差：聲音既是恆常遍滿，聞或不聞的關鍵究竟何在？逼出下文「罪垢自障」的解答，把問題從音聲本身轉向了聞者自身的染淨。</td></tr><tr><td class="bh30p7-src">答曰：眾生無量劫以來，所作惡業覆，是故不聞。譬如雷電霹靂，聾者不聞，雷聲無減；佛亦如是，常為眾生說法，如龍震大雷聲，眾生罪故，自不得聞。如今世人精進持戒者，於念佛三昧心得定時，罪垢不障，即得見佛，聞佛說法，音聲清了。菩薩於三種音聲中欲得二種，是二者……</td><td>答：眾生從無量劫以來，所造作的種種惡業障蔽覆蓋了自己，因此聽不到佛的音聲。就譬如雷電霹靂之時，耳聾的人聽不見雷聲，但雷聲本身並沒有因此而減損分毫；佛也是這樣，恆常在為眾生說法，如同巨龍震動、發出宏大的雷聲一般，只是眾生自身罪障深重，所以聽不到。如果現今世上有精進持戒的人，在念佛三昧中使心得到禪定的時候，罪垢便不再障蔽，當下就能見到佛、聽聞佛說法，音聲清晰明了。菩薩在這三種音聲之中，想要獲得後面兩種——這兩種是……</td><td class="bh30p7-guan"><b>聾者不聞雷·過在聞者不在聲</b>——雷聲遍震而聾者不聞，聲量並未減損分毫，過失全在聞者自身官能之障；佛音遍滿十方而眾生罪垢自障，其理正同。可知聞法與否的關鍵，不在音聲遍滿與否（此為佛之體性，恆常如是），而在聞者能否透過持戒念佛、禪定清淨而拆除自身業障這層「隔音牆」。</td></tr><tr><td class="bh30p7-src">以是故說：「菩薩摩訶薩欲以一音使十方恒河沙等世界聞聲者，當學般若波羅蜜。」</td><td>因為這樣的緣故，經中才說：「菩薩摩訶薩如果想要以一種聲音，讓十方恒河沙數那麼多的世界都能聽聞得到，就應當學習般若波羅蜜。」</td><td class="bh30p7-guan"><b>首尾呼應·聞障之解仍歸般若</b>——全品以「當學般若波羅蜜」始，亦以此句終：音聲遍滿是佛的法爾體性，聞或不聞則繫於眾生罪障之淨染；而破除罪障、證得清淨聞性的根本憑藉，仍是般若波羅蜜的智慧，首尾迴環，扣回全品宗旨。</td></tr></tbody></table><p class="bh30p7-note">卷三十品7「一音遍十方願」原文·白話·中觀三欄對照。本品釋《般若經》「欲發一音使十方如恒河沙等世界聞聲，當學般若波羅蜜」一句：先辨菩薩音聲（有恒河沙等之數，量的極致）與佛音聲（所到無有限數，質的超越）之別；次舉《密跡經》目連測佛音之喻，明佛聲遠近如一、不隨距離衰減；復開演音聲三層級（業報音聲、神通音聲、法界體性音聲）；末以聾者不聞雷、眾生罪垢自障為喻，說明音聲雖遍滿十方，聞或不聞繫於自身罪障之淨與不淨，終歸於「當學般若波羅蜜」——一音遍十方之神通，其根柢仍在般若智慧，而非聲量之積累。</p></div></div>
+<script id="wy-bh30p7-js">(function(){
+var CH=document.querySelectorAll("section.chapter");
+var BTN=document.getElementById("bh30p7Btn"),BOX=document.getElementById("bh30p7Box"),MODAL=document.getElementById("bh30p7Modal");
+if(!CH.length||!BTN||!BOX||!MODAL)return;
+var TARGET=6;
+function curIdx(){var lim=window.innerHeight*0.35,idx=-1;for(var i=0;i<CH.length;i++){if(CH[i].getBoundingClientRect().top<lim)idx=i;}return idx;}
+/*BHPLACE*/function place(){var cands=[document.getElementById("c30p7Box")],eb=document.querySelector(".wy-ebox");if(eb)cands.push(eb);var best=null;for(var i=0;i<cands.length;i++){var el=cands[i];if(!el)continue;var cs=getComputedStyle(el);if(cs.display==="none")continue;var r=el.getBoundingClientRect();if(r.height<=4)continue;var v=Math.round(window.innerHeight-r.top)+8;if(best===null||v>best)best=v;}if(best!==null)BOX.style.bottom=best+"px";}
+function upd(){place();BOX.classList.toggle("show",curIdx()===TARGET);}
+var tk=false;function onS(){if(!tk){tk=true;requestAnimationFrame(function(){tk=false;upd();});}}
+window.addEventListener("scroll",onS,{passive:true});window.addEventListener("resize",onS);
+BTN.addEventListener("click",function(){MODAL.classList.add("open");});
+MODAL.addEventListener("click",function(e){if(e.target===MODAL||e.target.id==="bh30p7Close")MODAL.classList.remove("open");});
+document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classList.remove("open");});
+upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
+})();</script>
+<!--WY-BH30P7:END-->
 </body>
 </html>
